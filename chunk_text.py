@@ -12,16 +12,11 @@ with open('data/apple_first_10k.txt', encoding = 'utf-8') as f:
 # Use for loop to chunk -> 2000 per chunk for now
 chunks = [text[i:i+2000] for i in range(0, len(text), 1800)]
 
-#print(len(chunks))
-
 
 
 # Chunking it with records
 records = [{"id": f"apple_10k_{i}", "text": c} for i,c in enumerate(chunks)]
 
-# Checking output
-# print(records[0])
-# print(records[50]['id'])
 
 
 # Saving as json
