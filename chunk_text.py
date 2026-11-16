@@ -9,8 +9,8 @@ with open('data/apple_first_10k.txt', encoding = 'utf-8') as f:
 
 
 
-# Use for loop to chunk -> 2000 per chunk for now
-chunks = [text[i:i+2000] for i in range(0, len(text), 1800)]
+# Use for loop to chunk -> 1000 per chunk for now
+chunks = [text[i:i+1000] for i in range(0, len(text), 800)]
 
 
 
